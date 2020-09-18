@@ -14,4 +14,4 @@ The Peloton web application does not display target metrics, like cadence and re
 3. Metrics are magically displayed! (after the one minute start/warm-up)
 
 # How to install
-Go to https://lioajie.github.io/pelokeiser_metrics/.
+Go to https://github.com/lioajie/pelokeiser_metrics.
