@@ -4,7 +4,7 @@ The Peloton web application does not display target metrics, like cadence and re
 ![Alt](https://i.ibb.co/S0Skbj8/pelokeiser.jpg "Peloton class with target metrics")
 
 # Metrics
-- Two resistance ranges are displayed. The first is for the Keiser bike, the second is for Peloton (in parentheses).
+- Two resistance ranges are displayed. The first is for the Keiser bike, the second is for Peloton (in parentheses). Resistance conversion is based on [this commonly accepted conversion chart](https://www.sippingandshopping.org/wp-content/uploads/2019/04/Peloton-Keiser-Resistance-Conversion-Chart.jpg).
 - Live and recently added classes do not have metrics. It can take a day or more for Peloton to add metrics to a recording.
 - Metrics begin after the 1 minute warm-up.
 
@@ -33,3 +33,5 @@ In your web browser, create a new bookmark in your to the bookmarks bar. Name it
 
 ## Chromebook
 In your web browser, create a new bookmark in your to the bookmarks bar. Name it PeloKeiser and copy the PeloKeiser code above into the URL field.  Use Ctrl+Shift+B to reveal the bookmarks bar, if hidden.
+
+Super special thanks to creator ZV3zrmCT who was generous enough to share their code after originally writing this project up with [Target Metrics and Schwinn IC4 Peloton resistance conversions](https://zv3zrmct.github.io/peloton_schwinn_metrics/).
