@@ -24,8 +24,8 @@ fetch("https://api.onepeloton.com/api/ride/" + rideID + "/details?stream_source=
   })
   .then(function (ride) {
 
-    // schwinn mapping, values in order corresponding to peloton
-    var schwinnResistance = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 14, 15, 17, 19, 20, 22, 23, 25, 27, 29, 31, 33, 35, 38, 41, 43, 46, 49, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100];
+    // keiser mapping, values in order corresponding to peloton
+    var keiserResistance = [1,1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,7,7,8,8,9,9,9,10,10,10,10,10,11,11,11,11,12,12,12,12,13,13,13,14,14,14,14,15,15,15,15,15,16,16,16,16,16,17,17,17,17,17,18,18,18,18,18,19,19,19,19,19,20,20,20,20,20,21,21,21,21,21,22,22,22,22,22,23,23,23,23,23,24,24,24,24,24,24,24,24,24,24];
 
     var classDuration = Number(ride.ride.duration);
 
@@ -90,7 +90,7 @@ fetch("https://api.onepeloton.com/api/ride/" + rideID + "/details?stream_source=
       for (var i = 0; i < ride.instructor_cues.length; i++) {
         var cue = ride.instructor_cues[i];
         if (timecode >= Number(cue.offsets.start) && timecode <= Number(cue.offsets.end)) {
-          cadResisTextDiv.innerHTML = "cadence: " + cue.cadence_range.lower + " - " + cue.cadence_range.upper + "&nbsp;&nbsp;&nbsp;&nbsp; resistance: " + schwinnResistance[cue.resistance_range.lower] + " - " + schwinnResistance[cue.resistance_range.upper] + "&nbsp;&nbsp;&nbsp;&nbsp; (" + cue.resistance_range.lower + " - " + cue.resistance_range.upper + ")";
+          cadResisTextDiv.innerHTML = "cadence: " + cue.cadence_range.lower + " - " + cue.cadence_range.upper + "&nbsp;&nbsp;&nbsp;&nbsp; resistance: " + keiserResistance[cue.resistance_range.lower] + " - " + keiserResistance[cue.resistance_range.upper] + "&nbsp;&nbsp;&nbsp;&nbsp; (" + cue.resistance_range.lower + " - " + cue.resistance_range.upper + ")";
 
           if (timecode == Number(cue.offsets.start)) {
             cadResisProgressDiv.style.transition = "none";
