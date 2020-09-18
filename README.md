@@ -14,4 +14,4 @@ The Peloton web application does not display target metrics, like cadence and re
 3. Metrics are magically displayed! (after the one minute start/warm-up)
 
 # How to install
-Go to https://zv3zrmct.github.io/peloton_schwinn_metrics/.
+Go to https://lioajie.github.io/peloton_schwinn_metrics/.
