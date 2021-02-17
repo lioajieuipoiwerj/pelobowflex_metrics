@@ -14,6 +14,6 @@ The Peloton web application does not display target metrics, like cadence and re
 3. Metrics are magically displayed! (after the one minute start/warm-up)
 
 # How to install
-Go to https://lioajie.github.io/pelokeiser_metrics/.
+Go to https://github.com/lioajieuipoiwerj/pelobowflex_metrics.
 
 Super special thanks to creator ZV3zrmCT who was generous enough to share their code after originally writing this project up with [Target Metrics and Schwinn IC4 Peloton resistance conversions](https://zv3zrmct.github.io/peloton_schwinn_metrics/).
