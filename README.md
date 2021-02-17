@@ -1,7 +1,7 @@
 # About
 The Peloton web application does not display target metrics, like cadence and resistance. This bookmarklet uses the Peloton web application and API to display the target metrics. Works in cycling classes viwed in the browser only.
 
-![Alt](https://i.ibb.co/NTyLcW8/pelokeiserbookmarklet.jpg "Peloton class with target metrics")
+![Alt](https://imgur.com/a/DNaT2q4 "Peloton class with target metrics")
 
 # Metrics
 - Two resistance ranges are displayed. The first is for the Bowflex bike, the second is for Peloton (in parentheses). Resistance conversion is based on [this commonly accepted conversion chart](https://i.pinimg.com/originals/08/8c/fb/088cfb395de5135edb4a562637ffa1b0.jpg).
